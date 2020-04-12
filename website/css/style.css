@@ -1,6 +1,7 @@
 body{
-    background: #fffff8;
+    background: #f23557;
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    margin: 0;
 }
 
 #app{
@@ -20,30 +21,60 @@ body{
 
 }
 
+.holder.entry {
+    margin-bottom: 10px;
+}
+
 .entry{
     background: rgba(59, 74, 107, .4);
 }
 
-#entryHolder{
-
+#entryHolder, #oldEntryHolder {
+    list-style-type: none;
+    padding: 0;
+    -webkit-padding-start: 0;
+    margin: 10px;
+    overflow: auto;
 }
 
-#date{
-
+#entryHolder, #oldEntryHolder li {
+  clear: both;
 }
 
-#temp{
-
+#entryHolder .date, #oldEntryHolder .date {
+    float: left;
+    width: 25%;
 }
 
-#content{
+#entryHolder .temp, #oldEntryHolder .temp {
+    float: left;
+    width: 25%;
+}
 
+#entryHolder .city, #oldEntryHolder .city {
+    float: left;
+    width: 25%;
+}
+
+#entryHolder .content, #oldEntryHolder .content {
+    float: left;
+    width: 25%;
+}
+
+#oldEntryHolder {
+    overflow: auto;
 }
 
 .headline {
 
 }
 .title{
+    padding: 10px;
+    text-decoration: underline;
+}
+
+#feelings {
+    width: 99%;
 
 }
 
@@ -56,7 +87,7 @@ label{
 input{
     display:block;
     height: 60px;
-    width: 320px;
+    width: 100%;
     background:#22b2da;
     color: #f0d43a;
     font-size: 20px;
@@ -73,6 +104,7 @@ button{
     font-family: 'Oswald', sans-serif;
     border: none;
     box-shadow: 2px 4px 5px #444;
+    cursor: pointer ;
 }
 h1{
     font-size: 36px;
