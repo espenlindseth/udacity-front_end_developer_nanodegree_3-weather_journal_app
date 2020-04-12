@@ -7,10 +7,15 @@ The first commit contains the provided template code, any subsequent commits the
 
 
 ## Instructions
-To run this, clone it or download it, make sure you have node installed. I used v10.15.3.
+To run this, clone it or download the repo, make sure you have node installed. I used v10.15.3.
 
 Then you may have to run these commands:
-`node --version`
-`npm install express`
-`npm install body-parser`
-`npm install cors`
+```node --version```
+```npm install express```
+```npm install body-parser```
+```npm install cors```
+
+Then you should be able to run:
+```node Server.js```
+
+And then run index.html in a browser of your choice.
